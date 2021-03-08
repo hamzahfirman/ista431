@@ -3,24 +3,7 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
-		"pipelines": [
-			{
-				"pipelineReference": {
-					"referenceName": "DeltaCopyFromBlobPipeline",
-					"type": "PipelineReference"
-				},
-				"parameters": {
-					"windowStart": {
-						"type": "Expression",
-						"value": "@{addminutes(trigger().scheduledTime, -15)}"
-					},
-					"windowEnd": {
-						"type": "Expression",
-						"value": "@trigger().scheduledTime"
-					}
-				}
-			}
-		],
+		"pipelines": [],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
