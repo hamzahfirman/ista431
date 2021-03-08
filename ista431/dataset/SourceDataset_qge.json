@@ -1,0 +1,48 @@
+{
+	"name": "SourceDataset_qge",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "source"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "YYYY",
+				"type": "String"
+			},
+			{
+				"name": "    MM",
+				"type": "String"
+			},
+			{
+				"name": "  DD",
+				"type": "String"
+			},
+			{
+				"name": " 10^6 sq km3",
+				"type": "String"
+			},
+			{
+				"name": " 10^6 sq km4",
+				"type": "String"
+			},
+			{
+				"name": " Source data product web sites: http://nsidc.org/data/nsidc-0081.html and http://nsidc.org/data/nsidc-0051.html",
+				"type": "String"
+			}
+		]
+	}
+}
